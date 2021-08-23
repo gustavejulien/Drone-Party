@@ -1,0 +1,8 @@
+argparse
+queue
+sounddevice
+vosk
+wave
+subprocess
+mutagen
+json

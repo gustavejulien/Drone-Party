@@ -1,0 +1,3 @@
+UPLOAD_FOLDER = './song'
+TTS_RATE = 125
+TTS_VOLUME = 1.0

@@ -1,0 +1,2 @@
+[app]
+inv1 ansible_ssh_host=RASP_IP

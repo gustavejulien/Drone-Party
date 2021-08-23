@@ -1,0 +1,29 @@
+
+*** Settings ***
+Library         Dialogs
+Library         librairie.MasterApiManual
+
+
+*** Test Cases ***
+test_0022 : setspeed
+    [Tags]
+    ...             campagne master api manual
+    [Setup]  Setup test
+    test_setspeed
+    [Teardown]   Teardown test
+
+*** Keywords ***
+test_setspeed
+    setspeed
+    sleep  3s
+    cmleft
+    sleep  3s
+    cmup
+    execute_manual_step  Is the drone flying ? 
+
+Teardown test
+    kill test
+
+Setup test
+    init test
+

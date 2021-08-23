@@ -1,0 +1,156 @@
+name: Workflow
+on: [push]
+jobs:
+  nativeClient:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install libgtk
+        run: sudo apt-get install libgtk-3-0 libgtk-3-dev libgtkmm-3.0-dev
+      - name: Install build-essentials
+        run: sudo apt-get install build-essential
+      - name: Install snap
+        run: sudo apt install snapd
+      - name: Install CMake
+        run: sudo snap install cmake --classic
+      - name: Build the native client
+        run: cd client_natif && ./build.sh
+
+  webClient:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Use Node.js LTS 14.17.1
+      uses: actions/setup-node@v2
+      with:
+        node-version: 14.17.1
+    - name: Install node modules
+      run: |
+        cd client_web/drone-front
+        npm i
+    - name: run react server
+      run: |
+        cd client_web/drone-front
+        npm run build
+    - name: Lint
+      run: |
+        cd client_web/drone-front
+        npm install eslint --save-dev
+        npx eslint --init
+        npx eslint ./src --ext .js,.jsx,.ts,.tsx
+
+  droneController:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up Python 3.9
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.9
+      - name: Install dependencies
+        run: |
+          cd Master_API/interface_low
+          python -m pip install --upgrade pip
+          pip install flake8 pytest
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+      - name: Lint with flake8
+        run: |
+          cd Master_API/interface_low
+          # stop the build if there are Python syntax errors or undefined names
+          flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
+          # exit-zero treats all errors as warnings. The GitHub editor is 127 chars wide
+          flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
+      - name: Functional testing
+        run: |
+          cp Master_API/interface_low/DroneLibrary.py test/librairie/DroneLibrary.py
+          cp Master_API/interface_low/DroneController.py test/librairie/DroneController.py
+          cp Master_API/interface_low/MockTello.py test/librairie/MockTello.py
+          cp Master_API/interface_low/__init__.py test/librairie/__init__.py
+          cd test
+          ls librairie
+          python droneControllerMain.py
+
+  sttClient:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up Python 3.9
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.9
+      - name: Install dependencies
+        run: |
+          cd client_stt
+          python -m pip install --upgrade pip
+          pip install flake8-nb pytest
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+      - name: Lint with flake8-nb
+        run: |
+          cd client_stt
+          # stop the build if there are Python syntax errors or undefined names
+          flake8_nb . --count --select=E9,F63,F7,F82 --show-source --statistics
+          # exit-zero treats all errors as warnings. The GitHub editor is 127 chars wide
+          flake8_nb . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
+
+  masterAPI:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up Python 3.9
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.9
+      - name: Install dependencies
+        run: |
+          cd Master_API
+          python -m pip install --upgrade pip
+          pip install flake8 pytest
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+      - name: Lint with flake8
+        run: |
+          cd Master_API
+          # stop the build if there are Python syntax errors or undefined names
+          flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
+          # exit-zero treats all errors as warnings. The GitHub editor is 127 chars wide
+          flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
+
+  userAPI:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Use Node.js LTS 14.17.1
+      uses: actions/setup-node@v2
+      with:
+        node-version: 14.17.1
+    - name: Install node modules
+      run: |
+        cd User_API
+        npm i
+    - name: Lint
+      run: |
+        cd User_API
+        npm install eslint --save-dev
+        npx eslint --init
+        npx eslint . --ext .ts,.tsx
+
+  soundAPI:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up Python 3.9
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.9
+      - name: Install dependencies
+        run: |
+          cd Sound_API
+          python -m pip install --upgrade pip
+          pip install flake8 pytest
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+      - name: Lint with flake8
+        run: |
+          cd Sound_API
+          # stop the build if there are Python syntax errors or undefined names
+          flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
+          # exit-zero treats all errors as warnings. The GitHub editor is 127 chars wide
+          flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics

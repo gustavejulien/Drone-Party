@@ -1,0 +1,5 @@
+to start the ts daemon converting ts to js live:
+tsc --watch
+
+to start the server:
+npm start

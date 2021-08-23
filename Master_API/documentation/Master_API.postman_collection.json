@@ -1,0 +1,1247 @@
+{
+	"info": {
+		"_postman_id": "c3e8ec2e-4b79-43d4-bfb9-626e61521402",
+		"name": "Master_API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "patrouille",
+			"item": [
+				{
+					"name": "patrouille launch",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "xxxx",
+								"type": "text"
+							},
+							{
+								"key": "refreshtoken",
+								"value": "xxxx",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8001/patrouille/launch/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"patrouille",
+								"launch",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "patrouille destroy",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "xxxx",
+								"type": "text"
+							},
+							{
+								"key": "refreshtoken",
+								"value": "xxxx",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8001/patrouille/destroy/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"patrouille",
+								"destroy",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "patrouille start",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "xxxx",
+								"type": "text"
+							},
+							{
+								"key": "refreshtoken",
+								"value": "xxxx",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8001/patrouille/start/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"patrouille",
+								"start",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "patrouille desactive",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "xxxx",
+								"type": "text"
+							},
+							{
+								"key": "refreshtoken",
+								"value": "xxxx",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8001/patrouille/desactive/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"patrouille",
+								"desactive",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "patrouille active",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "xxxx",
+								"type": "text"
+							},
+							{
+								"key": "refreshtoken",
+								"value": "xxxx",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8001/patrouille/active/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"patrouille",
+								"active",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "toutou",
+			"item": [
+				{
+					"name": "toutou launch",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "xxxx",
+								"type": "text"
+							},
+							{
+								"key": "refreshtoken",
+								"value": "xxxx",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8001/toutou/launch/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"toutou",
+								"launch",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "toutou destroy",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "xxxx",
+								"type": "text"
+							},
+							{
+								"key": "refreshtoken",
+								"value": "xxxx",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8001/toutou/destroy/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"toutou",
+								"destroy",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "toutou start",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "xxxx",
+								"type": "text"
+							},
+							{
+								"key": "refreshtoken",
+								"value": "xxxx",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8001/toutou/launch/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"toutou",
+								"launch",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "toutou desactive",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "xxxx",
+								"type": "text"
+							},
+							{
+								"key": "refreshtoken",
+								"value": "xxxx",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8001/toutou/desactive/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"toutou",
+								"desactive",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "toutou active",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "xxxx",
+								"type": "text"
+							},
+							{
+								"key": "refreshtoken",
+								"value": "xxxx",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8001/toutou/active/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"toutou",
+								"active",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "manuel",
+			"item": [
+				{
+					"name": "/sec/forward/",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "refreshtoken",
+								"value": "",
+								"type": "text"
+							},
+							{
+								"key": "token",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"value\" : 1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8001/manual/sec/forward/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"manual",
+								"sec",
+								"forward",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/cm/forward/",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "refreshtoken",
+								"value": "",
+								"type": "text"
+							},
+							{
+								"key": "token",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"value\" : 1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8001/manual/cm/forward/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"manual",
+								"cm",
+								"forward",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/sec/backward/",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "refreshtoken",
+								"value": "",
+								"type": "text"
+							},
+							{
+								"key": "token",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"value\" : 1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8001/manual/sec/backward/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"manual",
+								"sec",
+								"backward",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/cm/backward/",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "refreshtoken",
+								"value": "",
+								"type": "text"
+							},
+							{
+								"key": "token",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"value\" : 1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8001/manual/cm/backward/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"manual",
+								"cm",
+								"backward",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/cm/left/",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "refreshtoken",
+								"value": "",
+								"type": "text"
+							},
+							{
+								"key": "token",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"value\" : 1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8001/manual/cm/left/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"manual",
+								"cm",
+								"left",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/sec/left/",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "refreshtoken",
+								"value": "",
+								"type": "text"
+							},
+							{
+								"key": "token",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"value\" : 1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8001/manual/sec/left/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"manual",
+								"sec",
+								"left",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/cm/right/",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "refreshtoken",
+								"value": "",
+								"type": "text"
+							},
+							{
+								"key": "token",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"value\" : 1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8001/manual//cm/right/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"manual",
+								"",
+								"cm",
+								"right",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/sec/right/",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "refreshtoken",
+								"value": "",
+								"type": "text"
+							},
+							{
+								"key": "token",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"value\" : 1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8001/manual/sec/right/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"manual",
+								"sec",
+								"right",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/sec/up/",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "refreshtoken",
+								"value": "",
+								"type": "text"
+							},
+							{
+								"key": "token",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"value\" : 1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8001/manual/sec/up/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"manual",
+								"sec",
+								"up",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/cm/up/",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "refreshtoken",
+								"value": "",
+								"type": "text"
+							},
+							{
+								"key": "token",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"value\" : 1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8001/manual/cm/up/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"manual",
+								"cm",
+								"up",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/cm/down/",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "refreshtoken",
+								"value": "",
+								"type": "text"
+							},
+							{
+								"key": "token",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"value\" : 1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8001/manual/cm/down/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"manual",
+								"cm",
+								"down",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/playsong/",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "refreshtoken",
+								"value": "",
+								"type": "text"
+							},
+							{
+								"key": "token",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"value\" : \"name\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8001/manual/playsong/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"manual",
+								"playsong",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/sec/down/",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "refreshtoken",
+								"value": "",
+								"type": "text"
+							},
+							{
+								"key": "token",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"value\" : 1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8001/manual/sec/down/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"manual",
+								"sec",
+								"down",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/takepicture/",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "refreshtoken",
+								"value": "",
+								"type": "text"
+							},
+							{
+								"key": "token",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8001/manual/takepicture/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"manual",
+								"takepicture",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/setspeed/",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "refreshtoken",
+								"value": "",
+								"type": "text"
+							},
+							{
+								"key": "token",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"value\" : 1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8001/manual/setspeed/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"manual",
+								"setspeed",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/turnleft/",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "refreshtoken",
+								"value": "",
+								"type": "text"
+							},
+							{
+								"key": "token",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"value\" : 1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8001/manual/turnleft/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"manual",
+								"turnleft",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/turnright/",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "refreshtoken",
+								"value": "",
+								"type": "text"
+							},
+							{
+								"key": "token",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"value\" : 1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8001/manual/turnright/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"manual",
+								"turnright",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "user_connect",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"password\" : \"password\",\n    \"username\" : \"username\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8001/user/connect/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8001",
+					"path": [
+						"user",
+						"connect",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user_delete",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MGQwOTM5MjlkZDU5ZjRiZDc5MmYwY2EiLCJpYXQiOjE2MjQyODMxMTMsImV4cCI6MTYyNDI4NjcxM30.ZMQ-YTpY_Eo3hj70SgQRXBcPl2DCxmTdMsZhQSVUihU",
+						"type": "text"
+					},
+					{
+						"key": "refreshtoken",
+						"value": "xxxx",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"password\" : \"password\",\n    \"username\" : \"username\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8001/user/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8001",
+					"path": [
+						"user",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user_get",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MGQwOTgwNTlkZDU5ZjRiZDc5MmYwY2MiLCJpYXQiOjE2MjQyODMxNjIsImV4cCI6MTYyNDI4Njc2Mn0.21VI7gKo0k8bywpuZ5pEEX0sXZSjXimuK8L73NLf9d8",
+						"type": "text"
+					},
+					{
+						"key": "refreshtoken",
+						"value": "xxxx",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"password\" : \"password\",\n    \"username\" : \"username\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8001/user/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8001",
+					"path": [
+						"user",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user_put",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "token",
+						"value": "xxxx",
+						"type": "text"
+					},
+					{
+						"key": "refreshtoken",
+						"value": "xxxx",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"password\" : \"password\",\n    \"username\" : \"username\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8001/user/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8001",
+					"path": [
+						"user",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user_post",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "token",
+						"value": "xxxx",
+						"type": "text"
+					},
+					{
+						"key": "refreshtoken",
+						"value": "xxxx",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"password\" : \"password\",\n    \"username\" : \"username\",\n    \"email\":\"pingouin1\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8001/user/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8001",
+					"path": [
+						"user",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

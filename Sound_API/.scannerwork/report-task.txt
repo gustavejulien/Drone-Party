@@ -1,0 +1,6 @@
+projectKey=Sound_API
+serverUrl=http://localhost:9000
+serverVersion=8.8.0.42792
+dashboardUrl=http://localhost:9000/dashboard?id=Sound_API
+ceTaskId=AXpSbovw2y-NGKDD5lDV
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AXpSbovw2y-NGKDD5lDV
