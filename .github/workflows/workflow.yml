@@ -4,7 +4,7 @@ jobs:
   nativeClient:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - name: Install libgtk
         run: sudo apt-get install libgtk-3-0 libgtk-3-dev libgtkmm-3.0-dev
       - name: Install build-essentials
@@ -19,7 +19,7 @@ jobs:
   webClient:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
     - name: Use Node.js LTS 14.17.1
       uses: actions/setup-node@v2
       with:
@@ -42,7 +42,7 @@ jobs:
   droneController:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - name: Set up Python 3.9
         uses: actions/setup-python@v2
         with:
@@ -73,7 +73,7 @@ jobs:
   sttClient:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - name: Set up Python 3.9
         uses: actions/setup-python@v2
         with:
@@ -95,7 +95,7 @@ jobs:
   masterAPI:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - name: Set up Python 3.9
         uses: actions/setup-python@v2
         with:
@@ -117,7 +117,7 @@ jobs:
   userAPI:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
     - name: Use Node.js LTS 14.17.1
       uses: actions/setup-node@v2
       with:
@@ -136,7 +136,7 @@ jobs:
   soundAPI:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - name: Set up Python 3.9
         uses: actions/setup-python@v2
         with:
