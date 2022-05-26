@@ -6,6 +6,7 @@ In means of control we will find :
 - Voice recognition
 - Qt client and electron client
 - A web client 
+
 The main features will be the following: 
 - "Doggie" mode, the drone will follow the user
 - "Patrol" mode, the drone will patrol and at the meeting of some faces emit a sound. 
