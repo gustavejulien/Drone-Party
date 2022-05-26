@@ -1,4 +1,4 @@
-#Drone-Party
+# Drone-Party
 
 End of year project for the Pre-MSC pro course.
 The objective of this project is to provide a drone rich in functionality. This drone will offer many means of control and many features. 
