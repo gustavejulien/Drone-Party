@@ -4,7 +4,7 @@
       "postinstall": "husky install ; npx husky add .husky/commit-msg 'npx commitlint --edit $1'"
    },
    "devDependencies": {
-      "@commitlint/cli": "^12.1.4",
+      "@commitlint/cli": "^17.0.3",
       "@commitlint/config-conventional": "^12.1.4",
       "husky": "^6.0.0"
    }
